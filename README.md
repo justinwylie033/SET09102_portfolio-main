@@ -19,7 +19,7 @@ Welcome to my SET09102 portfolio. This repository is a reflection of my journey,
 
 ## Introduction
 
-The SET09102 module has been a transformative experience. From setting up development environments to collaborating on team projects, each week brought its unique challenges and learnings.
+The SET09102 module will be a transformative experience. From setting up development environments to collaborating on team projects, each week brought its unique challenges and learnings.
 
 ## Week 2: Setup
 
@@ -33,7 +33,6 @@ This week focused on ensuring a properly-configured working environment. Key tas
 Challenges faced:
 
 - Initial hiccups in integrating Visual Studio with GitHub.
-- Ensuring all team members had a consistent setup.
 
 Learnings:
 
