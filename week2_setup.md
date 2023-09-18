@@ -71,6 +71,6 @@ Before we begin, ensure you have the following installed:
 
 For any issues, questions, or feedback, please reach out to:
 
-- **Team Lead**: John Doe ([john.doe@email.com](mailto:john.doe@email.com))
-- **GitHub Expert**: Jane Smith ([jane.smith@email.com](mailto:jane.smith@email.com))
-- **Visual Studio Expert**: Alan Turing ([alan.turing@email.com](mailto:alan.turing@email.com))
+- **Team Lead**: Justin Wylie
+- **GitHub Expert**: TBD
+- **Visual Studio Expert**: TBD
