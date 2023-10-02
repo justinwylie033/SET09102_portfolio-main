@@ -1,4 +1,4 @@
-
+In the demonstrated analytical exercise, I was tasked with a code review of a basic C# program and tasked with identifying and improving areas deemed problematic or inefficient. The review centres on key programming principles and readability, escalating when and where it's appropriate and adhering to recognised standards and rules. Detailed below are my findings.
 Problematic/Inefficient Code:
 
 ```csharp
