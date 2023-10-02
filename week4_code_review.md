@@ -24,7 +24,7 @@ code review challenges. For your portfolio, do the following:
 * Include multiple examples. Make the decision about which example shows your best
   work and use that one.
 
-Code Review Challenge:
+Problematic/Inefficient Code:
 
 ```csharp
 using System;
@@ -50,7 +50,7 @@ namespace MyApplication
 }
 ```
 
-The first issue with the existing code is that it lacks proper commenting. Commenting is crucial for understanding code context and maintenability. The function name 'check' as well as the variable 'i' are not descriptive enough, causing understanding difficulties. Proper naming enhances readability. The import of the entire System namespace is not necessary for the current extent of functionality, and could potentially lead to namespace collision. 
+The initial challenge with the existing code is the absence of appropriate commentary. In-depth commentary facilitates comprehension of the code's purpose and ensures maintainability over time. The names of the function 'check' and the variable 'i' lack descriptive clarity. This ambiguity, particularly pertaining to the function name 'check', inhibits effective interpretation of the code's functionality. Thoughtfully chosen, explicit names can notably enhance procedural logic's readability and minimise occurrences of execution errors.
 
 The violation of the Open/Closed Principle occurs in the use of `int` where `double` would have been more inclusive. The function declaration does not follow the standard C# naming conventions. 
 
