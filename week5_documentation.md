@@ -181,6 +181,9 @@ This format is standardized, aiding developers in understanding the functionalit
 
 <h2> Final results from Doxygen assisted documentation generation </h2>
 
+![Example Image](images/DoxygenExample.png)
+
+
 
 
 
