@@ -10,7 +10,7 @@ First, choose six rules of clean code and explain them. For each one,
 
 Second, copy the doxygen comments from your code into your portfolio and provide some 
 descriptive commentary on their purpose and structure. Use screenshots showing the HTML 
-content that is generated from your code to illustrate your explanation.
+content that is generated from your code to illustrate your <h3> Explanation </h3>.
 
 Finally, highlight three examples from your code where you have eliminated the need
 for comments by adhering to the principles of clean code.
@@ -18,11 +18,11 @@ for comments by adhering to the principles of clean code.
 Six Rules Of Clean Code
 
 <h2> 1. Meaningful Names </h2>
-Summary
+<h3> Summary </h3>
 Select descriptive and unambiguous names for variables, methods, and classes to clearly communicate their purpose or function.
 
-Example
-Before (Week 2)
+<h3> Example </h3>
+<h4> Before </h4> (Week 2)
 
 ```csharp
 
@@ -30,26 +30,26 @@ public class DatabaseInitialiser { }
 
 ```
 
-After (Week 4)
+<h4> After </h4> (Week 4)
 
 ```csharp
 
 public class SqliteDbTableInitializer { }
-Explanation
+<h3> Explanation </h3>
 The refined name SqliteDbTableInitializer indicates that the class is related to initializing tables in an SQLite database, providing more explicit information than DatabaseInitialiser.
 ```
 
 2. Small Functions
-Summary
+<h3> Summary </h3>
 Construct functions to be succinct and focused on a single responsibility to enhance readability.
 
-Example
-Before
+<h3> Example </h3>
+<h4> Before </h4>
 
 ```csharp
 
 public void InitialiseTables() { /*... logic of opening connection, creating tables, and closing connection ...*/ }
-After
+<h4> After </h4>
 
 ```
 
@@ -62,38 +62,38 @@ public void InitialiseTables() {
 }
 
 ```
-Explanation
+<h3> Explanation </h3>
 In the refined version, InitialiseTables() has been simplified into smaller functions, each performing a single operation, adhering to the principle of small functions.
 
 3. Avoid Output Arguments
-Summary
+<h3> Summary </h3>
 Return results from functions instead of using output parameters to simplify function usage and avoid unexpected side effects.
 
-Example
-Before
+<h3> Example </h3>
+<h4> Before </h4>
 
 ```csharp
 
 public void GetRecordId(string tableName, string name, out int id) { /*... logic ...*/ }
-After
+<h4> After </h4>
 ```
 ```csharp
 
 public int GetRecordId(string tableName, string name) { /*... logic ...*/ }
-Explanation
+<h3> Explanation </h3>
 GetRecordId now returns the ID directly, eliminating the need for an output parameter and enhancing clarity.
 ```
 4. Error Handling is One Thing
-Summary
+<h3> Summary </h3>
 Separate error handling and primary logic within functions to improve readability and maintainability.
 
-Example
-Before
+<h3> Example </h3>
+<h4> Before </h4>
 
 ```csharp
 
 public void AddRecord(string tableName, string name) { /*... logic and error handling...*/ }
-After
+<h4> After </h4>
 ```
 ```csharp
 
@@ -105,46 +105,46 @@ public void AddRecord(string tableName, string name) {
     }
 }
 ```
-Explanation
+<h3> Explanation </h3>
 Error handling and main logic are distinctly separated in the refined function, adhering to the principle that a function should address error handling as a singular concern.
 
 5. Don't Repeat Yourself (DRY)
-Summary
+<h3> Summary </h3>
 Avoid code duplication to ensure easier maintenance and consistency in logic application.
 
-Example
-Before
+<h3> Example </h3>
+<h4> Before </h4>
 
 ```csharp
 
 public void AddContinent(string name) { /*... logic ...*/ }
 public void AddCountry(string name) { /*... similar logic ...*/ }
-After
+<h4> After </h4>
 ```
 ```csharp
 
 public void AddRecordToTable(string tableName, string name) { /*... logic ...*/ }
-Explanation
+<h3> Explanation </h3>
 The method AddRecordToTable provides a generalized solution, preventing repetitive logic and ensuring a single point of modification.
 ```
 6. Comments Only When Necessary
-Summary
+<h3> Summary </h3>
 Use comments judiciously for explaining the rationale or intricacies behind a code segment, not to describe what it does.
 
-Example
-Before
+<h3> Example </h3>
+<h4> Before </h4>
 
 ```csharp
 
 // Adding record
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
-After
+<h4> After </h4>
 ```
 ```csharp
 
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
 ```
-Explanation
+<h3> Explanation </h3>
 The refined version removes the unnecessary comment since the method name AddRecord is already descriptive, adhering to the principle that code should be self-documenting when possible.
 
 The applied refinements from Week 2 to Week 4 illustrate adherence to clean coding principles, enhancing the readability, maintainability, and overall quality of the code.
