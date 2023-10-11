@@ -51,9 +51,10 @@ Construct functions to be succinct and focused on a single responsibility to enh
 ```csharp
 
 public void InitialiseTables() { /*... logic of opening connection, creating tables, and closing connection ...*/ }
+'''
 <h4> After </h4>
 
-```
+
 
 ```csharp
 
@@ -77,14 +78,16 @@ Return results from functions instead of using output parameters to simplify fun
 ```csharp
 
 public void GetRecordId(string tableName, string name, out int id) { /*... logic ...*/ }
+'''
 <h4> After </h4>
-```
+
 ```csharp
 
 public int GetRecordId(string tableName, string name) { /*... logic ...*/ }
+'''
 <h3> Explanation </h3>
 GetRecordId now returns the ID directly, eliminating the need for an output parameter and enhancing clarity.
-```
+
 <h2> 4. Error Handling is One Thing </h2>
 <h3> Summary </h3>
 Separate error handling and primary logic within functions to improve readability and maintainability.
@@ -95,8 +98,8 @@ Separate error handling and primary logic within functions to improve readabilit
 ```csharp
 
 public void AddRecord(string tableName, string name) { /*... logic and error handling...*/ }
-<h4> After </h4>
 ```
+<h4> After </h4>
 ```csharp
 
 public void AddRecord(string tableName, string name) {
@@ -121,14 +124,15 @@ Avoid code duplication to ensure easier maintenance and consistency in logic app
 
 public void AddContinent(string name) { /*... logic ...*/ }
 public void AddCountry(string name) { /*... similar logic ...*/ }
-<h4> After </h4>
 ```
+<h4> After </h4>
 ```csharp
 
 public void AddRecordToTable(string tableName, string name) { /*... logic ...*/ }
+```
 <h3> Explanation </h3>
 The method AddRecordToTable provides a generalized solution, preventing repetitive logic and ensuring a single point of modification.
-```
+
 <h2> 6. Comments Only When Necessary </h2>
 <h3> Summary </h3>
 Use comments judiciously for explaining the rationale or intricacies behind a code segment, not to describe what it does.
@@ -140,8 +144,9 @@ Use comments judiciously for explaining the rationale or intricacies behind a co
 
 // Adding record
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
-<h4> After </h4>
 ```
+<h4> After </h4>
+
 ```csharp
 
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
