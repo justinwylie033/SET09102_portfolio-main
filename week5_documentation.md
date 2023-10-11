@@ -183,7 +183,76 @@ This format is standardized, aiding developers in understanding the functionalit
 
 ![Example Image](images/DoxygenExample.png)
 
+<h2> The Role Of Clean Code In Reducing Commentary </h2>
 
+<h3> Example 1: Self-Documenting Function Name </h3>
+
+<h4> Initial Code: </h4>
+
+```csharp
+public class DatabaseInitialiser
+```
+<h4> Refactored Code: </h4>
+
+```csharp
+public class SqliteDatabaseTableInitialiser
+```
+<h4> Explanation: </h4>
+The refactored name SqliteDatabaseTableInitialiser clearly conveys its purpose of initializing tables in an SQLite database, reducing the necessity for additional comments.
+
+<h3> Example 2: Extract Method Refactor for Clarity </h3>
+<h4>Initial Code: </h4>
+
+```csharp
+public void InitialiseTables()
+{
+    // Logic to execute table creation commands
+}
+```
+<h4> Refactored Code: </h4>
+
+```csharp
+public void InitialiseTables()
+{
+    ExecuteTableCreationCommands();
+}
+
+private void ExecuteTableCreationCommands()
+{
+    // Logic to execute table creation commands
+}
+```
+<h4>Explanation: </h4>
+Extracting the logic for executing table creation commands into its own method (ExecuteTableCreationCommands) simplifies InitialiseTables and removes the need for inline comments.
+
+<h3> Example 3: Encapsulating Conditional Logic </h3>
+
+<h4> Initial Code: </h4>
+
+```csharp
+public void InitialiseTables()
+{
+    // Logic for checking and opening a database connection
+}
+```
+
+<h4> Refactored Code: </h4>
+
+```csharp
+public void InitialiseTables()
+{
+    EnsureDatabaseConnectionIsOpen();
+}
+
+private void EnsureDatabaseConnectionIsOpen()
+{
+    // Logic for checking and opening a database connection
+}
+```
+<h4> Explanation: </h4>
+Encapsulating the logic for ensuring the database connection is open into a method (EnsureDatabaseConnectionIsOpen) enhances readability and reduces the need for explanatory comments.
+
+These refinements make the code more self-explanatory, adhering to clean code principles by making the code itself serve as documentation wherever possible.
 
 
 
