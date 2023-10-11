@@ -101,6 +101,7 @@ Separate error handling and primary logic within functions to improve readabilit
 public void AddRecord(string tableName, string name) { /*... logic and error handling...*/ }
 ```
 <h4> After </h4>
+
 ```csharp
 
 public void AddRecord(string tableName, string name) {
@@ -127,10 +128,12 @@ public void AddContinent(string name) { /*... logic ...*/ }
 public void AddCountry(string name) { /*... similar logic ...*/ }
 ```
 <h4> After </h4>
-```csharp
 
+```csharp
 public void AddRecordToTable(string tableName, string name) { /*... logic ...*/ }
+
 ```
+
 <h3> Explanation </h3>
 The method AddRecordToTable provides a generalized solution, preventing repetitive logic and ensuring a single point of modification.
 
