@@ -27,6 +27,9 @@ Before (Week 2)
 ```csharp
 
 public class DatabaseInitialiser { }
+
+```
+
 After (Week 4)
 
 ```csharp
