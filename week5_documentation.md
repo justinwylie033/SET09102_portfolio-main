@@ -14,8 +14,10 @@ content that is generated from your code to illustrate your <h3> Explanation </h
 
 Finally, highlight three examples from your code where you have eliminated the need
 for comments by adhering to the principles of clean code.
+
  
-Six Rules Of Clean Code
+<h1> Six Rules Of Clean Code </h1>
+<h3> This weeks portfolio assignment was to an exemplification of clean code in practice, this is available below. </h3>
 
 <h2> 1. Meaningful Names </h2>
 <h3> Summary </h3>
