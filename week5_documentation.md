@@ -35,9 +35,11 @@ public class DatabaseInitialiser { }
 ```csharp
 
 public class SqliteDbTableInitializer { }
+
+```
 <h3> Explanation </h3>
 The refined name SqliteDbTableInitializer indicates that the class is related to initializing tables in an SQLite database, providing more explicit information than DatabaseInitialiser.
-```
+
 
 <h2> 2. Small Functions </h2>
 <h3> Summary </h3>
