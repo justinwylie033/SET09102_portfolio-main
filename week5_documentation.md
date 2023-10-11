@@ -39,7 +39,7 @@ public class SqliteDbTableInitializer { }
 The refined name SqliteDbTableInitializer indicates that the class is related to initializing tables in an SQLite database, providing more explicit information than DatabaseInitialiser.
 ```
 
-2. Small Functions
+<h2> 2. Small Functions </h2>
 <h3> Summary </h3>
 Construct functions to be succinct and focused on a single responsibility to enhance readability.
 
@@ -65,7 +65,7 @@ public void InitialiseTables() {
 <h3> Explanation </h3>
 In the refined version, InitialiseTables() has been simplified into smaller functions, each performing a single operation, adhering to the principle of small functions.
 
-3. Avoid Output Arguments
+<h2> 3. Avoid Output Arguments </h2>
 <h3> Summary </h3>
 Return results from functions instead of using output parameters to simplify function usage and avoid unexpected side effects.
 
@@ -83,7 +83,7 @@ public int GetRecordId(string tableName, string name) { /*... logic ...*/ }
 <h3> Explanation </h3>
 GetRecordId now returns the ID directly, eliminating the need for an output parameter and enhancing clarity.
 ```
-4. Error Handling is One Thing
+<h2> 4. Error Handling is One Thing </h2>
 <h3> Summary </h3>
 Separate error handling and primary logic within functions to improve readability and maintainability.
 
@@ -108,7 +108,7 @@ public void AddRecord(string tableName, string name) {
 <h3> Explanation </h3>
 Error handling and main logic are distinctly separated in the refined function, adhering to the principle that a function should address error handling as a singular concern.
 
-5. Don't Repeat Yourself (DRY)
+<h2> 5. Don't Repeat Yourself (DRY) </h2>
 <h3> Summary </h3>
 Avoid code duplication to ensure easier maintenance and consistency in logic application.
 
@@ -127,7 +127,7 @@ public void AddRecordToTable(string tableName, string name) { /*... logic ...*/ 
 <h3> Explanation </h3>
 The method AddRecordToTable provides a generalized solution, preventing repetitive logic and ensuring a single point of modification.
 ```
-6. Comments Only When Necessary
+<h2> 6. Comments Only When Necessary </h2>
 <h3> Summary </h3>
 Use comments judiciously for explaining the rationale or intricacies behind a code segment, not to describe what it does.
 
