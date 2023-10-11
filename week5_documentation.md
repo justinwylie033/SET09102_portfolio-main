@@ -161,3 +161,26 @@ public void AddRecord(string tableName, string name) { /*... logic ...*/ }
 The refined version removes the unnecessary comment since the method name AddRecord is already descriptive, adhering to the principle that code should be self-documenting when possible.
 
 The applied refinements from Week 2 to Week 4 illustrate adherence to clean coding principles, enhancing the readability, maintainability, and overall quality of the code.
+
+<h1> Doxygen Implementation </h1>
+<h2> Providing an automated platform for multi-language code documentation using HTML as an interface </h2>
+
+<h2> Doxygen Comments </h2>
+Better comments provide for better Doxygen analysis and as such we have used a Doxygen recognised comment standard '///'. This can be translated into an HTML-based documentation. <param> provides information about the parameters, and <exception> describes possible exceptions thrown by the method.
+
+```csharp
+/// <summary>
+/// Initializes a new instance of the <see cref="DatabaseInitialiser"/> class.
+/// </summary>
+/// <param name="connection">The SQLite connection to use for database initialization.</param>
+/// <exception cref="ArgumentNullException">Thrown if the provided connection is null.</exception>
+public DatabaseInitialiser(SqliteConnection connection)
+```
+
+This format is standardized, aiding developers in understanding the functionality and usage of the method at a glance without delving deep into the implementation details. It also supports the generation of external documentation, making API documentation, for instance, consistent and comprehensible.
+
+<h2> Final results from Doxygen assisted documentation generation </h2>
+
+
+
+
