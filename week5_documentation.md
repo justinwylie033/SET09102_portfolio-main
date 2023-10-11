@@ -51,7 +51,7 @@ Construct functions to be succinct and focused on a single responsibility to enh
 ```csharp
 
 public void InitialiseTables() { /*... logic of opening connection, creating tables, and closing connection ...*/ }
-'''
+```
 <h4> After </h4>
 
 
