@@ -78,13 +78,14 @@ Return results from functions instead of using output parameters to simplify fun
 ```csharp
 
 public void GetRecordId(string tableName, string name, out int id) { /*... logic ...*/ }
-'''
+```
+
 <h4> After </h4>
 
 ```csharp
 
 public int GetRecordId(string tableName, string name) { /*... logic ...*/ }
-'''
+```
 <h3> Explanation </h3>
 GetRecordId now returns the ID directly, eliminating the need for an output parameter and enhancing clarity.
 
