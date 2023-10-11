@@ -17,20 +17,20 @@ for comments by adhering to the principles of clean code.
  
 Six Rules Of Clean Code
 
-1. Meaningful Names
+<h2> 1. Meaningful Names </h2>
 Summary
 Select descriptive and unambiguous names for variables, methods, and classes to clearly communicate their purpose or function.
 
 Example
 Before (Week 2)
 
-csharp
-Copy code
+```csharp
+
 public class DatabaseInitialiser { }
 After (Week 4)
 
-csharp
-Copy code
+```csharp
+
 public class SqliteDbTableInitializer { }
 Explanation
 The refined name SqliteDbTableInitializer indicates that the class is related to initializing tables in an SQLite database, providing more explicit information than DatabaseInitialiser.
@@ -42,13 +42,13 @@ Construct functions to be succinct and focused on a single responsibility to enh
 Example
 Before
 
-csharp
-Copy code
+```csharp
+
 public void InitialiseTables() { /*... logic of opening connection, creating tables, and closing connection ...*/ }
 After
 
-csharp
-Copy code
+```csharp
+
 public void InitialiseTables() {
     OpenConnection();
     ExecuteTableCreationCommands();
@@ -64,13 +64,13 @@ Return results from functions instead of using output parameters to simplify fun
 Example
 Before
 
-csharp
-Copy code
+```csharp
+
 public void GetRecordId(string tableName, string name, out int id) { /*... logic ...*/ }
 After
 
-csharp
-Copy code
+```csharp
+
 public int GetRecordId(string tableName, string name) { /*... logic ...*/ }
 Explanation
 GetRecordId now returns the ID directly, eliminating the need for an output parameter and enhancing clarity.
@@ -82,13 +82,13 @@ Separate error handling and primary logic within functions to improve readabilit
 Example
 Before
 
-csharp
-Copy code
+```csharp
+
 public void AddRecord(string tableName, string name) { /*... logic and error handling...*/ }
 After
 
-csharp
-Copy code
+```csharp
+
 public void AddRecord(string tableName, string name) {
     try {
         // primary logic
@@ -106,14 +106,14 @@ Avoid code duplication to ensure easier maintenance and consistency in logic app
 Example
 Before
 
-csharp
-Copy code
+```csharp
+
 public void AddContinent(string name) { /*... logic ...*/ }
 public void AddCountry(string name) { /*... similar logic ...*/ }
 After
 
-csharp
-Copy code
+```csharp
+
 public void AddRecordToTable(string tableName, string name) { /*... logic ...*/ }
 Explanation
 The method AddRecordToTable provides a generalized solution, preventing repetitive logic and ensuring a single point of modification.
@@ -125,14 +125,14 @@ Use comments judiciously for explaining the rationale or intricacies behind a co
 Example
 Before
 
-csharp
-Copy code
+```csharp
+
 // Adding record
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
 After
 
-csharp
-Copy code
+```csharp
+
 public void AddRecord(string tableName, string name) { /*... logic ...*/ }
 Explanation
 The refined version removes the unnecessary comment since the method name AddRecord is already descriptive, adhering to the principle that code should be self-documenting when possible.
