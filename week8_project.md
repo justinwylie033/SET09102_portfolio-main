@@ -13,7 +13,7 @@
         <p>To accommodate the new feature requirements, we needed to introduce a new table into our database schema. Here's how I went about it:</p>
         <ol>
             <li>First I wrote the code - Engineering Centric.</li>
-            <pre><code class="language-csharp">
+```csharp
 private static List&lt;string&gt; GetTableCreationCommands()
 {
     return new List&lt;string&gt;
@@ -35,7 +35,7 @@ private static List&lt;string&gt; GetTableCreationCommands()
         + ")"
     };
 }
-            </code></pre>
+```
             <li>Second I consulted with my organisation on the changes: <a href="https://github.com/Software-Engineering-Red/MAUI-APP/pull/96">GitHub Pull Request</a></li>
             <li>Third, A Co-Worker reviewed and approved my changes.</li>
         </ol>
