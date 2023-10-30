@@ -1,25 +1,4 @@
-# Project work 1
-
-In week 8, you are exercising all the principles and techniques that have been discussed 
-in the module so far. Your portfolio entry should demonstrate your ability to integrate 
-the various dimensions of software engineering into your practice. It should include 
-
-* A descriptive summary of the issue that you worked on.
-* Snippets from your code with commentary showing how you have used good software design 
-  practice.
-* A descriptive summary of the test code that you have written.
-* A reflective summary of any changes that were requested during the code review along 
-  with your fixes.
-* A descriptive summary of any issues you found with the code that you were asked to review.
-* A general reflective section that identifies, for example,
-  * New things you have realised this week
-  * Common problems that can arise in a team development situation
-  * How your practice compares to other people's
-  * etc.
-
-Be sure to include links to the original items in the team's GitHub repository.
-
-Project Work 1: Operational Decision Tracking
+<h1> Operational Decision Tracking </h1>
 Introduction and Issue Description
 In the eighth week of our software engineering module, we delved into a practical application of the principles and techniques we've been exploring throughout the course. The task at hand involved enhancing our software to ensure robust tracking of operational decisions, resource requests, and the subsequent authorisations. Our end goal was clear: to uphold accountability for mission-critical decisions and to streamline the management of operational resources. This report provides a detailed account of my engagement with this task, focusing on the integration of various software engineering dimensions, the implementation of good design practices, and a reflective analysis of the peer review process.
 
