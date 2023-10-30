@@ -1,5 +1,4 @@
 
-<body>
     <h1>Operational Decision Tracking</h1>
 
     <section>
