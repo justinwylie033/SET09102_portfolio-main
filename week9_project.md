@@ -1,5 +1,5 @@
 
-Week 9: Continued Team Project Work
+<h1> Week 9: Continued Team Project Work </h1>
 Summary of Worked Issues
 This week, I continued refining our database interaction layer, focusing on the implementation of asynchronous database initialisation and table creation in our Database class. This work is part of our ongoing efforts to ensure thread safety and improve the responsiveness of our application.
 
